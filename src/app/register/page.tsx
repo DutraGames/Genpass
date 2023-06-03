@@ -32,7 +32,7 @@ export default function Register() {
                     <Image src='GenPass-logo.svg' width={136} height={22} alt='Logo' />
                 </header>
 
-                <h1 className={styles.title}>Comece a gerenciar suas senhas de forma segura.</h1>
+                <h1 className={styles.title}>Crie sua conta agora mesmo e aproveite todos os recursos</h1>
 
             </div>
             <div className={styles.right}>

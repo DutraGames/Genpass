@@ -29,7 +29,7 @@ export default function Login() {
                     <Image src='GenPass-logo.svg' width={136} height={22} alt='Logo' />
                 </header>
 
-                <h1 className={styles.title}>Comece a gerenciar suas senhas de forma segura.</h1>
+                <h1 className={styles.title}>A segurança dos seus dados é nossa prioridade.</h1>
 
             </div>
             <div className={styles.right}>
