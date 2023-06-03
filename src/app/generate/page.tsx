@@ -1,5 +1,6 @@
 "use client"
 import PassItem from '@/components/PassItem'
+import { GeneratePass } from '@/functions/GeneratePass'
 import useDatabase from '@/hooks/useDatabase'
 import { Dado } from '@/types/Dado'
 import Image from 'next/image'
@@ -28,8 +29,6 @@ export default function Generate() {
 
     const getData = async () => {
       const resultado: Dado[] = await onData()
-      console.log(resultado);
-
       setDados(resultado)
     }
 
@@ -37,37 +36,12 @@ export default function Generate() {
   }, [onData,dados])
 
 
-  const generatePass = () => {
-    let chars = ""
-    let password = ""
+  const generatePassword = () => {
+    
+    const gen = GeneratePass(togle1,togle2,togle3,sizepass)
 
-    if (!togle1 && !togle2 && !togle3) return
-
-    if (togle1 && !togle2 && !togle3) {
-      chars = "0123456789"
-    }
-    else if (!togle1 && togle2 && !togle3) {
-      chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    }
-    else if (!togle1 && !togle2 && togle3) {
-      chars = "_#&@$£€"
-    }
-    else if (togle1 && togle2 && !togle3) {
-      chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    }
-    else {
-      chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_#&@$£€"
-    }
-
-
-
-    for (var i = 0, n = chars.length; i < sizepass; ++i) {
-      password += chars.charAt(Math.floor(Math.random() * n))
-
-    }
-
-    setPassword(password)
-    sendData(password)
+    setPassword(gen!)
+    sendData(gen!)
   }
 
 
@@ -123,7 +97,7 @@ export default function Generate() {
             />
           </div>
 
-          <button className={styles.btngen} onClick={generatePass}>Gerar senha</button>
+          <button className={styles.btngen} onClick={generatePassword}>Gerar senha</button>
         </div>
       </div>
 
