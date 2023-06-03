@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 0.1rem solid #EDEFF6;
+    padding: 1rem;
+}
+
+.pass {
+    color: #0A2FB6;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.eye {
+    cursor: pointer;
+}
+
+.delete{
+    color: #E2E4EB;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.delete:hover{
+    color: #0A2FB6;
+}
