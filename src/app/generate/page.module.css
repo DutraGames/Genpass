@@ -1,0 +1,123 @@
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+
+.left {
+    background-color: #082796;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-left: 11.2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.passfield {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.label {
+    color: #FFF;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.fieldgen {
+    width: 33rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    text-align: center;
+}
+
+.fieldgen:disabled {
+    background-color: #1F40B6;
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+.fieldrange {
+    background-color: #1F40B6;
+    width: 33rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numrange {
+    color: #FFF;
+}
+
+.range {
+    width: 80%;
+    color: #082796;
+    height: .2rem;
+}
+
+.fieldconfig {
+    background-color: #1F40B6;
+    margin-bottom: 1rem;
+    width: 33rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btngen {
+    background-color: #EDEFF6;
+    border-radius: .4rem;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    color: #082796;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btngen:hover {
+    opacity: .7;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.lastpass {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.passcontainer{
+    overflow-y: auto;
+    width: 100%;
+}
