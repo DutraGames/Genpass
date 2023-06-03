@@ -1,0 +1,102 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+
+.left {
+  background-image: url("../../../public/bg-login.png");
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-left: 11.2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.title {
+  margin-left: 10rem;
+  margin-top: 6rem;
+  font-size: 3.5rem;
+  color: #fff;
+  line-height: 4rem;
+  width: 28rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 11.2rem;
+}
+
+
+.subtitle {
+  line-height: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.text {
+  color: #5A5B61;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 18rem;
+  margin-bottom: 1rem;
+}
+
+.input{
+  width: 25rem;
+  padding: 1rem;
+  border-radius: .4rem;
+  border:  .1rem solid #222;
+  margin-bottom: 1rem;
+}
+
+.label{
+  margin-bottom: 0.5rem;
+}
+
+.btnlogin{
+  background-color: #0A2FB6;
+  color:#fff;
+  width: 25rem;
+  height: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .4rem;
+  cursor: pointer;
+  border: 0;
+  margin-bottom: 1rem;
+  transition: all .5s;
+}
+
+.btnlogin:hover{
+  opacity: .7;
+}
+
+.btncadastro{
+  background-color: #EDEFF6;
+  color:#5A5B61;
+  width: 25rem;
+  height: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .4rem;
+  cursor: pointer;
+  border: 0;
+  transition: all .5s;
+}
+
+.btncadastro:hover{
+  opacity: .7;
+}
