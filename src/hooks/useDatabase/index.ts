@@ -13,7 +13,7 @@ export default function useDatabase() {
             senha: pass
         }
         const referencial = ref(database, `${auth.currentUser?.uid}`)
-        await push(referencial,dadinhos)
+        await push(referencial, dadinhos)
     };
 
     const onData = useCallback(async () => {
@@ -21,25 +21,30 @@ export default function useDatabase() {
             const referencial = ref(database, `${auth.currentUser?.uid}`);
             onValue(referencial, (snapshot) => {
                 const data = Object.entries(snapshot.val() ?? {}).map(([chave, valor]) => {
-                    return {
-                        chave,
-                        senha: valor.senha as string,
-                    };
-                });
+                    if (typeof valor === 'object' && valor !== null) {
+                        return {
+                            chave,
+                            senha: (valor as { senha: string }).senha,
+                        };
+                    } else {
+                        // Valor ignorado ou tratamento apropriado
+                        return null; // ou {}
+                    }
+                }) as Dado[]
                 resolve(data);
             });
         });
     }, [])
 
-    const DeleteData = (key:string) => {
+    const DeleteData = (key: string) => {
         const referencial = ref(database, `${auth.currentUser?.uid}/${key}`)
         remove(referencial)
     }
-    
+
 
     return {
         sendData,
         onData,
-        DeleteData 
+        DeleteData
     };
 }
