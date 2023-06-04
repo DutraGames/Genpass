@@ -1,10 +1,9 @@
 import {
     createUserWithEmailAndPassword,
     onAuthStateChanged,
-    sendEmailVerification,
     signInWithEmailAndPassword,
     signOut,
-    updateCurrentUser, User,
+    User
 } from 'firebase/auth'
 import { useState } from 'react'
 import { toast } from 'react-toastify'
@@ -68,24 +67,24 @@ export default function useAuth() {
             })
     }
 
-    const update = async (name: string) => {
+    /* const update = async (name: string) => {
         await updateCurrentUser(auth.currentUser, {
             displayName: name
         })
             .then(() => {
-                console.log("o nome é: " ,auth.currentUser?.displayName)
+                console.log("o nome é: ", auth.currentUser?.displayName)
             }).catch((error) => {
                 // An error occurred
                 // ...
             });
     }
 
-    const sendEmail = async() => {
+    const sendEmail = async () => {
         sendEmailVerification(auth.currentUser)
             .then(() => {
                 console.log("foi")
             });
-    }
+    } */
 
     return {
         onAuth,
