@@ -8,11 +8,6 @@ import { checkPublic } from '@/functions/check-public';
 
 const archivo = Archivo({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'GenPass - Login',
-  description: 'Página de Login do GenPass',
-}
-
 export default function RootLayout({
   children,
 }: {
