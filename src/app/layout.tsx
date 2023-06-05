@@ -21,6 +21,9 @@ export default function RootLayout({
 
   return (
     <html lang="pt-br">
+      <head>
+        <title>GenPass</title>
+      </head>
       <body className={archivo.className}>
         {isPublic && children}
         {!isPublic && <PrivateRoute>{children}</PrivateRoute>}
