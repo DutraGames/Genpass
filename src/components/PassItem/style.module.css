@@ -31,3 +31,13 @@
 .delete:hover{
     color: #0A2FB6;
 }
+
+.copy{
+    color: #E2E4EB;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.copy:hover{
+    color: #0A2FB6;
+}

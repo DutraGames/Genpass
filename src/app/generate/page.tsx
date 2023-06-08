@@ -7,8 +7,8 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Switch from "react-switch"
+import { ToastContainer } from 'react-toastify'
 import styles from './page.module.css'
-
 
 export default function Generate() {
 
@@ -117,6 +117,16 @@ export default function Generate() {
           })}
         </div>
       </div>
+      <ToastContainer position="bottom-left"
+                    autoClose={1000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="colored" />
     </main>
   )
 }

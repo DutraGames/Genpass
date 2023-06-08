@@ -1,3 +1,4 @@
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { DocumentCopy, Eye, EyeSlash, Trash } from 'iconsax-react';
 import { useState } from "react";
 import styles from './style.module.css';
@@ -7,9 +8,15 @@ interface PassItemProps {
     onDelete: () => void;
 }
 
-export default function PassItem({ senha, onDelete }: PassItemProps) {
 
+
+export default function PassItem({ senha, onDelete }: PassItemProps) {
+    const [state, copyToClipboard] = useCopyToClipboard()
     const [view, setView] = useState<boolean>(true)
+
+    const handleCopy = () => {
+        copyToClipboard(senha)
+    }
 
 
     return (
@@ -18,7 +25,9 @@ export default function PassItem({ senha, onDelete }: PassItemProps) {
             {!view && <p className={styles.pass}>**********</p>}
 
             <div className={styles.icons}>
-                <DocumentCopy size={20} color="#E2E4EB" />
+                <div className={styles.copy} onClick={handleCopy}>
+                    <DocumentCopy size={20} />
+                </div>
                 <div className={styles.delete} onClick={onDelete}>
                     <Trash size={20} />
                 </div>
