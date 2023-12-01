@@ -20,7 +20,7 @@ export default function Home() {
       
         <div className={styles.start} onClick={() => router.push('/login')}>
           <p>Comece</p>
-          <PlayCircle size={45} color="#000" variant='Bold' />
+          <PlayCircle size={70} color="#000" variant='Bold' />
         </div>
       
       </div>
