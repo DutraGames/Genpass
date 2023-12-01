@@ -28,7 +28,53 @@
   font-size: 2.5rem;
   color: #000;
   line-height: 3rem;
+}
 
+@media (min-width: 1400px) {
+  .title {
+    margin-left: 15rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .start p{
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .title {
+    margin-left: 17rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  .start p{
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .title {
+    margin-left: 18rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+
+  .start p {
+    font-size: 5.5rem;
+  }
+}
+@media (min-width: 2000px) {
+  .title {
+    margin-left: 20rem;
+    font-size: 6.5rem;
+    line-height: 7rem;
+  }
+
+  .start p {
+    font-size: 7.5rem;
+  }
 }
 
 .start {
