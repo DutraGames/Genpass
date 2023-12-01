@@ -29,15 +29,15 @@ export default function Register() {
         <main className={styles.main}>
             <div className={styles.left}>
                 <header onClick={() => router.push('/')} className={styles.header}>
-                    <Image src='GenPass-logo.svg' width={136} height={22} alt='Logo' />
+                    <Image src='GenPass-logo.svg' width={125} height={125} alt='Logo' />
                 </header>
 
-                <h1 className={styles.title}>Crie sua conta agora mesmo e aproveite todos os recursos</h1>
+                <h1 className={styles.title}>Crie sua conta<br/> agora mesmo e <br/> aproveite todos <br/> os recursos</h1>
 
             </div>
             <div className={styles.right}>
                 <h2 className={styles.subtitle}>Faça o seu cadastro!</h2>
-                <span className={styles.text}>Crie sua conta em apenas alguns passos simples, e começar a utilizar o nosso aplicativo.</span>
+                <span className={styles.text}>Crie sua conta em apenas alguns passos simples, <br/> e começar a utilizar o nosso aplicativo.</span>
                 <label className={styles.label} htmlFor="nome">Seu Nome</label>
                 <input type="text" name="nome" id="nome" className={styles.input} value={username} onChange={(text) => setUsername(text.target.value)} placeholder='Campo para inserir o nome' />
                 <label className={styles.label} htmlFor="email">Seu E-mail</label>
