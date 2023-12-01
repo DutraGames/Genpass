@@ -13,18 +13,22 @@
 }
 
 .header {
-  margin-left: 11.2rem;
+  margin-left: 10rem;
   margin-top: 2rem;
   cursor: pointer;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
 }
 
 .title {
   margin-left: 10rem;
   margin-top: 6rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #000;
-  line-height: 4rem;
+  line-height: 3rem;
 
 }
 
@@ -38,6 +42,7 @@
   cursor: pointer;
   margin-top: 2rem;
   font-size: 3rem;
+  gap: .5rem;
 }
 
 .right {

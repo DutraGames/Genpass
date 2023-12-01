@@ -13,7 +13,7 @@ export default function Home() {
       <div className={styles.left}>
         <header onClick={() => router.push('/')} className={styles.header}>
           <Image src='GenPass-logo.svg' width={120} height={120} alt='Logo' />
-          <p>GenPass</p>
+          <p style={{ fontSize: '1rem', color: '#424CF9', fontWeight: 'bold' }}>GenPass</p>
         </header>
 
         <h1 className={styles.title}>Comece <br /> a gerenciar suas <br /> senhas de <br /> forma segura.</h1>
