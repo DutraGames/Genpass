@@ -12,7 +12,7 @@ interface PassItemProps {
 
 export default function PassItem({ senha, onDelete }: PassItemProps) {
     const [state, copyToClipboard] = useCopyToClipboard()
-    const [view, setView] = useState<boolean>(true)
+    const [view, setView] = useState<boolean>(false)
 
     const handleCopy = () => {
         copyToClipboard(senha)
