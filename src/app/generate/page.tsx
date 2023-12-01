@@ -50,7 +50,7 @@ export default function Generate() {
     <main className={styles.main}>
       <div className={styles.left}>
         <header onClick={() => router.push('/')} className={styles.header}>
-          <Image src='GenPass-logo.svg' width={136} height={22} alt='Logo' />
+          <Image src='GenPass-logo.svg' width={125} height={125} alt='Logo' />
         </header>
 
         <div className={styles.passfield}>
