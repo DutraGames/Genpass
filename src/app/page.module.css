@@ -7,13 +7,12 @@
 
 
 .left {
-  width: 50%;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .header {
-  margin-left: 10rem;
   margin-top: 2rem;
   cursor: pointer;
   display: flex;
@@ -24,7 +23,7 @@
 }
 
 .title {
-  margin-left: 10rem;
+  margin-left: 11rem;
   margin-top: 6rem;
   font-size: 2.5rem;
   color: #000;
@@ -36,13 +35,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10rem;
   font-weight: bold;
   color: #424CF9;
   cursor: pointer;
   margin-top: 2rem;
   font-size: 3rem;
-  gap: .5rem;
+  gap: 1rem;
 }
 
 .right {
@@ -53,60 +51,5 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 11.2rem;
-  width: 50%;
-}
-
-
-.subtitle {
-  line-height: 2.5rem;
-  font-size: 2rem;
-  margin-bottom: .5rem;
-}
-
-.text {
-  color: #5A5B61;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  width: 18rem;
-  margin-bottom: 1rem;
-}
-
-.btnlogin{
-  background-color: #0A2FB6;
-  color:#fff;
-  width: 25rem;
-  height: 2rem;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: .4rem;
-  cursor: pointer;
-  border: 0;
-  margin-bottom: 1rem;
-  transition: all .5s;
-}
-
-.btnlogin:hover{
-  opacity: .7;
-}
-
-.btncadastro{
-  background-color: #EDEFF6;
-  color:#5A5B61;
-  width: 25rem;
-  height: 2rem;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: .4rem;
-  cursor: pointer;
-  border: 0;
-  transition: all .5s;
-}
-
-.btncadastro:hover{
-  opacity: .7;
+  flex: 1;
 }
